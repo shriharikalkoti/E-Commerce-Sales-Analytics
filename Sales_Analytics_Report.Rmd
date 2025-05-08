@@ -1,0 +1,127 @@
+---
+title: "E-Commerce Sales Analytics"
+author: "Shrihari Kakakoti"
+date: "2025-03-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+This report presents a comprehensive data analytics project focused on e-commerce sales performance. It leverages statistical methods and visualizations to provide insights for strategic decision-making.
+
+# Background
+
+E-commerce businesses face challenges related to understanding customer behavior, pricing strategy, demand forecasting, and fulfillment efficiency. Analytics plays a key role in addressing these challenges.
+
+## Ask
+
+- What factors influence sales performance?
+- How does fulfillment method affect revenue?
+- What is the impact of product ratings and pricing on sales?
+
+## Prepare
+
+Data was collected from an e-commerce platform, including sales figures, product details, customer ratings, and fulfillment methods.
+
+## Process
+
+### **Data Preparation**
+
+The raw data was examined and transformed into a structured format suitable for analysis.
+
+### **Data Cleaning**
+
+Missing values, outliers, and inconsistent entries were handled to ensure data quality.
+
+## Analyse
+
+We applied statistical techniques such as:
+- Descriptive statistics
+- Correlation and regression
+- Time series trend analysis
+- Price elasticity
+- Control charts
+- Hypothesis testing
+
+## Share
+
+### **Visualization 1: Z-Test for Sales Mean**
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("visual_1.png")
+```
+**Insight:** The average sales amount is significantly lower than expected, indicating underperformance.
+.
+
+### **Visualization 2: X̄ (X-Bar) Control Chart for Mean Sales**
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("visual_2.png")
+```
+**Insight:** Sales performance is stable and remains within acceptable control limits over time.
+.
+
+### **Visualization 3:Range Control Chart for Mean Sales**
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("visual_3.png")
+```
+**Insight:** Quantity variation is under control, with most fluctuations staying well within control limits.
+.
+
+### **Visualization 4: Sales Trend Analysis**
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("visual_4.png")
+```
+**Insight:**  Sales show a declining trend over time, indicating potential weakening in demand or seasonal effects.
+
+### **Visualization 5:Correlation Matrix of Quantity, Amount, and Rating**
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("visual_5.png")
+```
+**Insight:** Sales amount moderately correlates with quantity, while product ratings show no significant correlation with either..
+
+### **Visualization 6: Actual vs Predicted Sales Amount (Multiple Linear Regression)**
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("visual_6.png")
+```
+**Insight:** The regression model moderately predicts sales, but high variance suggests other factors also influence outcomes..
+
+### **Visualization 7:  Sales Distribution by Revenue Category**
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("visual_7.png")
+```
+**Insight:** Most sales fall in the low-value segment, indicating limited high-ticket transactions.
+
+### **Visualization 8: Interaction Plot — Category vs Time Period**
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("visual_8.png")
+```
+**Insight:** Sales trends vary by category, with "Saree" showing the most significant fluctuation over time.
+
+### **Visualization 9:Price Elasticity of Demand Over Time**
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("visual_9.png")
+```
+**Insight:**  Price elasticity fluctuates significantly over time, indicating inconsistent sensitivity of demand to price changes.
+
+### **Visualization 10 Income Inequality Illustrated by Lorenz Curve**
+```{r, echo=FALSE, out.width='80%'}
+knitr::include_graphics("visual_10.png")
+```
+**Insight:**  The Lorenz Curve lies somewhat close to the Line of Equality, indicating moderate income inequality.
+
+## Act
+
+### **Conclusion**
+
+The analysis reveals that product ratings, fulfillment method, and pricing play critical roles in e-commerce success. Seasonal trends and regional performance offer further insight into sales strategies.
+
+### **Recommendations**
+
+- Prioritize high-performing categories for promotions.
+- Improve fulfillment processes to maximize customer satisfaction.
+- Leverage time-based trends for inventory planning and marketing.
+- Implement pricing strategies that reflect elasticity insights.
+- Reduce return rates through better product descriptions and quality control.
